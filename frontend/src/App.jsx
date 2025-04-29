@@ -7,6 +7,7 @@ import EmailVerificationPage from './pages/EmailVerificationPage'
 import {Toaster} from 'react-hot-toast';
 import { useAuthStore } from './store/authStore'
 import DashboardPage from './pages/DashboardPage'
+import LoadingSpinner from './components/LoadingSpinner'
 
 //protect routes that require authentication
 const ProtectedRoute = ({children}) => {
@@ -46,7 +47,7 @@ const App = () => {
 
   },[checkAuth])
 
-  console.log("isauthtenticated", isAuthenticated)
+  if(isCheckingAuth) return <LoadingSpinner />
 
 
   return (
