@@ -1,2 +1,3 @@
 .env
+backend/mailtrap/.env
 node_modules/

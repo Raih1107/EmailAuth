@@ -85,6 +85,7 @@ const App = () => {
                 <ResetPasswordPage />
               </RedirectAuthenticateUser>
             } />
+            <Route path='*' element={<Navigate to='/' replace />} />
           </Routes>
 
           <Toaster />
