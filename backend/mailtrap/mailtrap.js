@@ -4,8 +4,9 @@ dotenv.config();
 import { MailtrapClient } from "mailtrap";
 
 export const mail = new MailtrapClient({ token: process.env.MAILTRAP_TOKEN });
+console.log("MAILTRAP TOKEN:", process.env.MAILTRAP_TOKEN);
 
 export const sender = {
-  email: "mailtrap@demomailtrap.co", // ← You had a typo here (missing '@')
-  name: "Himanshu",
+  email: "hello@demomailtrap.co",
+  name: "Mailtrap Test",
 };

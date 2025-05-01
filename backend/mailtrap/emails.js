@@ -29,9 +29,9 @@ export const sendWelcomeEmail = async (email, name) => {
         const response = await mail.send({
             from: sender,
             to:recipient,
-            template_uuid :"e2f905e7-e8c0-4945-9626-21486f901e9e",
+            template_uuid :"2d8bd779-9d51-4e24-b705-bc345e6479be",
             template_variables: {
-                company_info_name: "AuthLetter",
+                company_info_name: "AuthLetters",
                 name: name,
             },
         });
